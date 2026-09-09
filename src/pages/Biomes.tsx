@@ -44,7 +44,7 @@ export function Biomes({
       </div>
 
       {activeBiome && (
-        <>
+        <div className="biome-active-panel" style={{ ['--tile-accent' as any]: activeBiome.accent }}>
           <div className="section-heading">{activeBiome.icon} {activeBiome.label}</div>
           {bugs.length === 0 ? (
             <div className="biome-empty-note">
@@ -60,7 +60,7 @@ export function Biomes({
               </div>
             </>
           )}
-        </>
+        </div>
       )}
     </div>
   );
