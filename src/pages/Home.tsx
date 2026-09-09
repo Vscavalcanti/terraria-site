@@ -2,7 +2,6 @@ import { BUGS } from '../data/bugs';
 import { VERSIONS } from '../data/versions';
 import { BIOMES } from '../data/biomes';
 import { CATEGORIES } from '../data/categories';
-import { Mascot } from '../components/Mascot';
 
 export function Home({ onOpenBug, onNavigate }: { onOpenBug: (id: string) => void; onNavigate: (p: string) => void }) {
   const total = BUGS.length;
@@ -14,19 +13,14 @@ export function Home({ onOpenBug, onNavigate }: { onOpenBug: (id: string) => voi
 
   return (
     <div>
-      <div className="hero-split">
-        <div className="hero-media">
-          <Mascot />
-        </div>
-        <div className="hero-copy">
-          <div className="eyebrow-mono">ARQUIVO — TERRARIA v1.4.5</div>
-          <div className="hero-title">Terraria Bug Archive</div>
-          <p className="hero-sub">Uma história dos bugs, exploits e falhas que marcaram Terraria — documentada versão a versão, bioma a bioma, com fontes verificáveis para cada entrada.</p>
-          <div className="hero-facts">
-            <div className="hero-fact"><strong>{total}</strong> bugs catalogados em <strong>{VERSIONS.length}</strong> versões</div>
-            <div className="hero-fact"><strong>{fixed}</strong> corrigidos · <strong>{unfixed}</strong> ainda em aberto</div>
-            <div className="hero-fact"><strong>{biomesWithBug}</strong> de {BIOMES.length} biomas com bug documentado</div>
-          </div>
+      <div className="hero">
+        <div className="eyebrow-mono">ARQUIVO — TERRARIA v1.4.5</div>
+        <div className="hero-title">Terraria Bug Archive</div>
+        <p className="hero-sub">Uma história dos bugs, exploits e falhas que marcaram Terraria — documentada versão a versão, bioma a bioma, com fontes verificáveis para cada entrada.</p>
+        <div className="hero-facts">
+          <div className="hero-fact"><strong>{total}</strong> bugs catalogados em <strong>{VERSIONS.length}</strong> versões</div>
+          <div className="hero-fact"><strong>{fixed}</strong> corrigidos · <strong>{unfixed}</strong> ainda em aberto</div>
+          <div className="hero-fact"><strong>{biomesWithBug}</strong> de {BIOMES.length} biomas com bug documentado</div>
         </div>
       </div>
 
