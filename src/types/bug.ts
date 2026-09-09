@@ -57,7 +57,7 @@ export interface BiomeInfo {
   key: string;
   label: string;
   icon: string;
-  audioFile: string; // filename inside /audio/biomes/
+  audioFile: string; // filename inside /public/audio/
   accent: string; // hex color
   particle: 'leaves' | 'sand' | 'vines' | 'snow' | 'bubbles' | 'spores' | 'embers' | 'sparkles' | 'shadow' | 'blood' | 'bones' | 'stars' | 'none';
 }
