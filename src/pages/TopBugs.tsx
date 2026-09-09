@@ -23,7 +23,14 @@ export function TopBugs({ onOpenBug }: { onOpenBug: (id: string) => void }) {
           const biome = biomeByKey(bug.biome);
           return (
             <article key={bug.id} className="top-bug" onClick={() => onOpenBug(bug.id)}>
-              <div className="top-bug-rank">#{i + 1}</div>
+              <div className="top-bug-media">
+                <span className="top-bug-rank-badge">#{i + 1}</span>
+                {bug.image ? (
+                  <img src={bug.image} alt={bug.name} />
+                ) : (
+                  <span className="top-bug-rank">#{i + 1}</span>
+                )}
+              </div>
               <div className="top-bug-body">
                 <div className="eyebrow-mono">
                   {cat?.icon} {cat?.label}

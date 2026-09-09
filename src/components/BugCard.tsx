@@ -5,6 +5,11 @@ export function BugCard({ bug, onOpen }: { bug: Bug; onOpen: (id: string) => voi
   const cat = categoryByKey(bug.category);
   return (
     <button className="bug-card" onClick={() => onOpen(bug.id)}>
+      {bug.image && (
+        <div className="bug-card-image">
+          <img src={bug.image} alt="" loading="lazy" />
+        </div>
+      )}
       <div className="bug-card-cat">{cat?.icon} {cat?.label.toUpperCase()}</div>
       <div className="bug-card-name">{bug.name}</div>
       <div className="bug-card-desc">{bug.description}</div>

@@ -12,6 +12,11 @@ export function BugDetail({ bug, onClose }: { bug: Bug; onClose: () => void }) {
     <div className="detail-overlay" onClick={onClose}>
       <div className="detail-panel" onClick={(e) => e.stopPropagation()}>
         <button className="detail-close" onClick={onClose} aria-label="Fechar">✕</button>
+        {bug.image && (
+          <div className="detail-image">
+            <img src={bug.image} alt={bug.name} />
+          </div>
+        )}
         <div className="eyebrow-mono">{cat?.icon} {cat?.label}{biome ? ` · ${biome.icon} ${biome.label}` : ''}</div>
         <div className="detail-title">{bug.name}</div>
 

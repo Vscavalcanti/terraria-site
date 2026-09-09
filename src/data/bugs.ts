@@ -7,6 +7,7 @@ export const BUGS: Bug[] = [
   {
     id: 'acorn-slingshot-universe',
     name: 'Acorn Slingshot — O bug que podia fazer o universo colapsar',
+    image: '/items/acorn-slingshot.png',
     category: 'armas',
     biome: undefined,
     version: '1.4.5.7',
@@ -40,6 +41,7 @@ export const BUGS: Bug[] = [
   {
     id: 'acorn-slingshot-ammo-overlap',
     name: 'Sobreposição de contadores no Acorn Slingshot',
+    image: '/items/acorn-slingshot.png',
     category: 'interface',
     version: '1.4.5.7',
     firstDocumentedVersion: NAO_DOCUMENTADO,
@@ -60,6 +62,7 @@ export const BUGS: Bug[] = [
   {
     id: 'mana-regen-band-stack',
     name: 'Mana Regeneration Band com stacking indevido',
+    image: '/items/mana-regeneration-band.png',
     category: 'mana',
     version: '1.4.5.7',
     firstDocumentedVersion: NAO_DOCUMENTADO,
@@ -78,6 +81,7 @@ export const BUGS: Bug[] = [
   {
     id: 'roller-skates-fire-immunity',
     name: 'Roller Skates concedendo imunidade indevida a blocos de fogo',
+    image: '/items/roller-skates.png',
     category: 'acessorios',
     version: '1.4.5.x',
     firstDocumentedVersion: NAO_DOCUMENTADO,
@@ -94,6 +98,7 @@ export const BUGS: Bug[] = [
   {
     id: 'roller-skates-wings',
     name: 'Roller Skates impedindo a exibição das wings',
+    image: '/items/roller-skates.png',
     category: 'acessorios',
     version: '1.4.5.7',
     firstDocumentedVersion: NAO_DOCUMENTADO,
@@ -110,6 +115,7 @@ export const BUGS: Bug[] = [
   {
     id: 'reindeer-bells-quickequip',
     name: 'Reindeer Bells sem suporte a quick-equip',
+    image: '/items/reindeer-bells.png',
     category: 'acessorios',
     version: '1.4.5.x',
     firstDocumentedVersion: NAO_DOCUMENTADO,
@@ -128,6 +134,7 @@ export const BUGS: Bug[] = [
   {
     id: 'quick-buff-slow-magic-reset',
     name: 'Quick Buff reiniciando a penalidade de "slow magic usage"',
+    image: '/items/mana-star.png',
     category: 'mana',
     version: '1.4.5.7',
     firstDocumentedVersion: NAO_DOCUMENTADO,
@@ -145,6 +152,7 @@ export const BUGS: Bug[] = [
   {
     id: 'mana-rework-context',
     name: 'Revisão do sistema de mana (contexto da 1.4.5.7)',
+    image: '/items/mana-star.png',
     category: 'mana',
     version: '1.4.5.7',
     firstDocumentedVersion: '1.4.5.7',
@@ -164,6 +172,7 @@ export const BUGS: Bug[] = [
   {
     id: 'hornet-deceleration',
     name: 'Hornets sem desaceleração correta',
+    image: '/items/hornet.png',
     category: 'inimigos',
     version: '1.4.5.x',
     firstDocumentedVersion: NAO_DOCUMENTADO,
@@ -181,6 +190,7 @@ export const BUGS: Bug[] = [
   {
     id: 'librarian-skeleton-teleport',
     name: 'Librarian Skeleton teleportando para fora da Dungeon',
+    image: '/items/librarian-skeleton.png',
     category: 'inimigos',
     version: '1.4.5.x',
     firstDocumentedVersion: NAO_DOCUMENTADO,
@@ -199,6 +209,7 @@ export const BUGS: Bug[] = [
   {
     id: 'confused-enemies-web-animation',
     name: 'Inimigos confusos com comportamento incorreto',
+    image: '/items/black-recluse.gif',
     category: 'inimigos',
     version: '1.4.5.x',
     firstDocumentedVersion: NAO_DOCUMENTADO,
@@ -216,6 +227,7 @@ export const BUGS: Bug[] = [
   {
     id: 'salamander-bestiary-crash',
     name: 'Crash de Salamander + Bestiary em multiplayer',
+    image: '/items/salamander.gif',
     category: 'multiplayer',
     version: '1.4.5.x',
     firstDocumentedVersion: NAO_DOCUMENTADO,
@@ -273,6 +285,7 @@ export const BUGS: Bug[] = [
   {
     id: 'duke-fishron-cthulhunado-spawn',
     name: 'Cthulhunado do Duke Fishron surgindo em cima do jogador',
+    image: '/items/duke-fishron.gif',
     category: 'bosses',
     version: NAO_DOCUMENTADO,
     firstDocumentedVersion: NAO_DOCUMENTADO,
@@ -291,6 +304,7 @@ export const BUGS: Bug[] = [
   {
     id: 'moonlord-contact-damage',
     name: 'Moon Lord e True Eyes com dano de contato indevido',
+    image: '/items/moon-lord.png',
     category: 'bosses',
     version: '1.4.5.7',
     firstDocumentedVersion: '1.4.5.7',
@@ -310,6 +324,7 @@ export const BUGS: Bug[] = [
   {
     id: 'living-wood-chest-loot',
     name: 'Living Wood Chests com loot incorreto',
+    image: '/items/living-wood-chest.webp',
     category: 'worldgen',
     biome: 'forest',
     version: '1.4.5.0',
@@ -345,6 +360,7 @@ export const BUGS: Bug[] = [
   {
     id: 'jungle-temple-no-pressure-plate',
     name: 'Armadilhas da Jungle Temple sem Pressure Plate',
+    image: '/items/jungle-temple.png',
     category: 'worldgen',
     biome: 'jungletemple',
     version: '1.4.5.0',
@@ -362,6 +378,7 @@ export const BUGS: Bug[] = [
   {
     id: 'jungle-temple-altar-ceiling',
     name: 'Altar da Jungle Temple gerando no teto da sala',
+    image: '/items/lihzahrd-altar.png',
     category: 'worldgen',
     biome: 'jungletemple',
     version: '1.4.5.x',
@@ -379,6 +396,7 @@ export const BUGS: Bug[] = [
   {
     id: 'mushroom-chest-jungle-loot',
     name: 'Loot da Jungle Temple aparecendo em Mushroom Chests',
+    image: '/items/mushroom-chest.webp',
     category: 'worldgen',
     biome: 'mushroom',
     version: '1.4.5.0',
@@ -412,6 +430,7 @@ export const BUGS: Bug[] = [
   {
     id: 'boulder-traps-overlap',
     name: 'Boulder traps sobrepondo e destruindo containers',
+    image: '/items/boulder.webp',
     category: 'worldgen',
     version: '1.4.5.0',
     firstDocumentedVersion: '1.4.5.0',
@@ -428,6 +447,7 @@ export const BUGS: Bug[] = [
   {
     id: 'dungeon-entrance-floating-island',
     name: 'Entrada da Dungeon gerando em Floating Island',
+    image: '/items/dungeon.png',
     category: 'worldgen',
     biome: 'dungeon',
     version: '1.4.5.x',

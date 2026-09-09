@@ -42,6 +42,7 @@ export interface Bug {
   sources: BugSource[];
   featured?: boolean;
   causesCrash?: boolean;
+  image?: string; // caminho em /public para o item/personagem/estrutura do bug
 }
 
 export interface VersionEntry {
