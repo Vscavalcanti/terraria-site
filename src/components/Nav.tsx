@@ -28,6 +28,10 @@ export function Nav({ page, onNavigate }: { page: PageKey; onNavigate: (p: PageK
           <button className={`topbar-link ${page === 'home' ? 'active' : ''}`} onClick={() => onNavigate('home')}>
             <span className="icon">🏠</span> Início
           </button>
+          <button className={`topbar-link ${page === 'top3' ? 'active' : ''}`} onClick={() => onNavigate('top3')}>
+            <span className="icon">🏆</span> Top 3
+          </button>
+          <span className="topbar-sep" />
           {CATEGORIES.map((c) => (
             <button key={c.key} className={`topbar-link ${page === c.key ? 'active' : ''}`} onClick={() => onNavigate(c.key)}>
               <span className="icon">{c.icon}</span> {c.label}

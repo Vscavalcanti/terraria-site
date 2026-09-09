@@ -7,13 +7,14 @@ import { Biomes } from './pages/Biomes';
 import { Category } from './pages/Category';
 import { Timeline } from './pages/Timeline';
 import { Dashboard } from './pages/Dashboard';
+import { TopBugs } from './pages/TopBugs';
 import { CATEGORIES, categoryByKey } from './data/categories';
 import { biomeByKey } from './data/biomes';
 import { bugById } from './data/bugs';
 import { AudioManager } from './audio/AudioManager';
 import { usePresentationMode } from './hooks/usePresentationMode';
 
-const NAV_ORDER = ['home', 'biomas', ...CATEGORIES.filter((c) => c.key !== 'biomas').map((c) => c.key), 'timeline', 'dashboard'];
+const NAV_ORDER = ['home', 'top3', 'biomas', ...CATEGORIES.filter((c) => c.key !== 'biomas').map((c) => c.key), 'timeline', 'dashboard'];
 
 export default function App() {
   const [page, setPage] = useState('home');
@@ -71,6 +72,7 @@ export default function App() {
 
   const renderPage = () => {
     if (page === 'home') return <Home onOpenBug={openBug} onNavigate={goto} />;
+    if (page === 'top3') return <TopBugs onOpenBug={openBug} />;
     if (page === 'biomas') return <Biomes selected={selectedBiome} onSelect={setSelectedBiome} onOpenBug={openBug} />;
     if (page === 'timeline') return <Timeline onOpenBug={openBug} />;
     if (page === 'dashboard') return <Dashboard />;
